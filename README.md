@@ -24,29 +24,15 @@
 
 ### Step2 Start ChatGPT service
 
-1. asdfasd
-
-
-
+1. install npm package, run:`cd ChatGPT/node-api & npm install`
+2. start ChatGPT service, run:`npx tsx conversionService.ts`
 
 ### Step3 Start Process Client
 
-1. prepare python environment, run:
-
-   ```shell
-   cd Client & python -m venv .venv
-   ```
+1. prepare python environment, run:`cd Client & python -m venv .venv`
 2. activate python virtual environment
 
    1. if you are running in Linux/MacOS, run: `source .venv/bin/activate`
    2. if you are running in Windows, double click to run **Client/.venv/bin/Activate.ps1**
-3. install python package, run:
-
-   ```shell
-   pip3 install -r requirements.txt
-   ```
-4. start client, run:
-
-   ```shell
-   python client.py
-   ```
+3. install python package, run:`pip3 install -r requirements.txt`
+4. config the IP and port of Wechat Hook Server in **Client/config.txt** start client, run:`python client.py`
