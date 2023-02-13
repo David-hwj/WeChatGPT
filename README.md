@@ -25,7 +25,8 @@
 ### Step2 Start ChatGPT service
 
 1. install npm package, run:`cd ChatGPT/node-api & npm install`
-2. start ChatGPT service, run:`npx tsx conversionService.ts`
+2. config your ChatGPT ApiKey in **ChatGPT/node-api/.env** , you can generate your ApiKey in: https://platform.openai.com/account/api-keys
+3. start ChatGPT service, run:`npx tsx conversionService.ts`
 
 ### Step3 Start Process Client
 
@@ -36,3 +37,10 @@
    2. if you are running in Windows, double click to run **Client/.venv/bin/Activate.ps1**
 3. install python package, run:`pip3 install -r requirements.txt`
 4. config the IP and port of Wechat Hook Server in **Client/config.txt** start client, run:`python client.py`
+
+
+## Reference
+
+Wechat Hook service from:
+
+ChatGPT service from:
