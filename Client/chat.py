@@ -4,7 +4,7 @@ from config import CONFIG
 
 
 
-chaturl = "http://"+CONFIG.get('CHATGPT', 'IP')+CONFIG.get('CHATGPT', 'PORT')
+chaturl = "http://"+CONFIG.get('CHATGPT', 'IP')+':'+CONFIG.get('CHATGPT', 'PORT')
 
 conversationIdDict = {}
 parentMessageIdDict = {}
@@ -27,4 +27,5 @@ def ask(wxid: str, prompt: str)-> str:
     return data['text']
 
 if __name__ == '__main__':
+    print(chaturl)
     print(ask("", "hello"))
