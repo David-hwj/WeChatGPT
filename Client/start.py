@@ -3,7 +3,7 @@ import websocket
 import time
 import json
 import chat
-
+from config import CONFIG
 
 HEART_BEAT = 5005
 RECV_TXT_MSG = 1
@@ -256,11 +256,9 @@ def on_close(ws):
     print("closed")
 
 
-config = open("config.txt", encoding="utf-8")
-SERVER = "ws://"+config.readline()
-config.close()
+server_host = CONFIG.get('SERVER','IP')+':'+CONFIG.get('SERVER','PORT')
+SERVER = "ws://"+server_host
 
-print(SERVER)
 
 websocket.enableTrace(True)
 ws = websocket.WebSocketApp(SERVER,

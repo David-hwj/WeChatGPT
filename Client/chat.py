@@ -1,10 +1,10 @@
 import requests
 import json
+from config import CONFIG
 
 
 
-chaturl = "http://localhost:3000/"
-param = {"prompt": "", "conversationId": "112", "parentMessageId": "11"} 
+chaturl = "http://"+CONFIG.get('CHATGPT', 'IP')+CONFIG.get('CHATGPT', 'PORT')
 
 conversationIdDict = {}
 parentMessageIdDict = {}
