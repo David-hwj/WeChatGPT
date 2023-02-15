@@ -193,7 +193,7 @@ def handle_recv_txt_msg(j):
     my_id = 'wxid_8v47n3pvlixe12'
     sender_id: str = j['wxid']
     content: str = j['content']
-    auto_reply_prefix: str = 'q'
+    auto_reply_prefix: str = CONFIG.get('CLIENT', 'TriggerPrefix')
     if (sender_id.startswith('wxid') and content.startswith(auto_reply_prefix)) or sender_id=='filehelper':
         # t_content: str = content[len(auto_reply_prefix)::]
         t_content: str = chat.ask(sender_id, content[len(auto_reply_prefix)::])

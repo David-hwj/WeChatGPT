@@ -14,6 +14,7 @@ npx tsx conversionService.ts&
 
 # 启动Client
 cd ../../Client
+rm -rf .venv
 python -m venv .venv
 
 source .venv/bin/activate
