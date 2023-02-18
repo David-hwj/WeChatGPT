@@ -38,9 +38,8 @@
 3. install python package, run:`pip3 install -r requirements.txt`
 4. config the IP and port of Wechat Hook Server in **Client/config.txt** start client, run:`python client.py`
 
-
 ## Reference
 
-Wechat Hook service from:
+Wechat Hook service from: https://github.com/cixingguangming55555/wechat-bot/
 
-ChatGPT service from:
+ChatGPT service from: https://github.com/transitive-bullshit/chatgpt-api
